@@ -1,0 +1,31 @@
+name: Update parole docs
+on: push
+#  schedule:
+#    - cron: "0 0 * * *"
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: update doc files
+        run: |
+          mkdir -p build/
+          git clone https://gitlab.xfce.org/apps/parole.git build/parole
+          cd build/parole
+          ./autogen.sh --enable-gtk-doc
+          make
+          cd ../../
+          rm -rf parole
+          cp -r build/parole/docs/plugin-api/html parole
+          rm -rf build/parole
+          git status
+
+#      - name: commit
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Update daily-live manifest
