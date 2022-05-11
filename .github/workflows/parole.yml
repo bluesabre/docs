@@ -1,7 +1,7 @@
 name: Update parole docs
-on: push
-#  schedule:
-#    - cron: "0 0 * * *"
+on:
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -30,7 +30,7 @@ jobs:
           rm -rf build/parole
           git status
 
-#      - name: commit
-#        uses: stefanzweifel/git-auto-commit-action@v4
-#        with:
-#          commit_message: Update daily-live manifest
+      - name: commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update daily parole docs
