@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>parole-provider-player: Parole Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Parole Plugins Reference Manual">
+<link rel="up" href="API.html" title="Part IV. Parole Plugin Reference">
+<link rel="prev" href="Parole-Plugins-parole-provider-plugin.html" title="parole-provider-plugin">
+<link rel="next" href="Parole-Plugins-parole-stream.html" title="ParoleStream">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#Parole-Plugins-parole-provider-player.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#Parole-Plugins-parole-provider-player.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#Parole-Plugins-parole-provider-player.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#Parole-Plugins-parole-provider-player.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="API.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="Parole-Plugins-parole-provider-plugin.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="Parole-Plugins-parole-stream.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="Parole-Plugins-parole-provider-player"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="Parole-Plugins-parole-provider-player.top_of_page"></a>parole-provider-player</span></h2>
+<p>parole-provider-player</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-main-window" title="parole_provider_player_get_main_window ()">parole_provider_player_get_main_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-pack" title="parole_provider_player_pack ()">parole_provider_player_pack</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gio/GSimpleAction.html#GSimpleAction-struct"><span class="returnvalue">GSimpleAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-action" title="parole_provider_player_get_action ()">parole_provider_player_get_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-set-fullscreen" title="parole_provider_player_set_fullscreen ()">parole_provider_player_set_fullscreen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-fullscreen" title="parole_provider_player_get_fullscreen ()">parole_provider_player_get_fullscreen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-stream-set-image" title="parole_stream_set_image ()">parole_stream_set_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GdkPixbuf</span> *
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-stream-get-image" title="parole_stream_get_image ()">parole_stream_get_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleState" title="enum ParoleState"><span class="returnvalue">ParoleState</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-state" title="parole_provider_player_get_state ()">parole_provider_player_get_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="returnvalue">ParoleStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-stream" title="parole_provider_player_get_stream ()">parole_provider_player_get_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-stream-position" title="parole_provider_player_get_stream_position ()">parole_provider_player_get_stream_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-play-uri" title="parole_provider_player_play_uri ()">parole_provider_player_play_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-pause" title="parole_provider_player_pause ()">parole_provider_player_pause</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-resume" title="parole_provider_player_resume ()">parole_provider_player_resume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-stop" title="parole_provider_player_stop ()">parole_provider_player_stop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-play-next" title="parole_provider_player_play_next ()">parole_provider_player_play_next</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-play-previous" title="parole_provider_player_play_previous ()">parole_provider_player_play_previous</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-seek" title="parole_provider_player_seek ()">parole_provider_player_seek</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Parole-Plugins-parole-provider-player.html#parole-provider-player-open-media-chooser" title="parole_provider_player_open_media_chooser ()">parole_provider_player_open_media_chooser</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-seeked" title="The “seeked” signal">seeked</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-state-changed" title="The “state-changed” signal">state-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-tag-message" title="The “tag-message” signal">tag-message</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ParoleProviderPlayerIface"></a><div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-struct" title="struct ParoleProviderPlayerIface">ParoleProviderPlayerIface</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer">ParoleProviderPlayer</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParolePluginContainer" title="enum ParolePluginContainer">ParolePluginContainer</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleState" title="enum ParoleState">ParoleState</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> ParoleProviderPlayerIface
+</pre>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+ParoleProviderPlayerIface requires
+ <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="parole-provider-player-get-main-window"></a><h3>parole_provider_player_get_main_window ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+parole_provider_player_get_main_window
+                               (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Ask the Player to get the Parole main window.</p>
+<div class="refsect3">
+<a name="parole-provider-player-get-main-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-get-main-window.returns"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> window</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-pack"></a><h3>parole_provider_player_pack ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+parole_provider_player_pack (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                             <em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParolePluginContainer" title="enum ParolePluginContainer"><span class="type">ParolePluginContainer</span></a> container</code></em>);</pre>
+<p>Ask the player to pack a widget in the playlist notebook if PAROLE_PLUGIN_CONTAINER_PLAYLIST
+is specified or in the main window notebook if PAROLE_PLUGIN_CONTAINER_MAIN_VIEW is specified.</p>
+<p>This function can be called once, the Player is responsible on removing the widget in
+case the plugin was unloaded.</p>
+<div class="refsect3">
+<a name="parole-provider-player-pack.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>title</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParolePluginContainer" title="enum ParolePluginContainer"><span class="type">ParolePluginContainer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-get-action"></a><h3>parole_provider_player_get_action ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gio/GSimpleAction.html#GSimpleAction-struct"><span class="returnvalue">GSimpleAction</span></a> *
+parole_provider_player_get_action (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>,
+                                   <em class="parameter"><code><span class="type">ParolePlayerAction</span> action</code></em>);</pre>
+<p>Get GSimpleAction from Parole.</p>
+<div class="refsect3">
+<a name="parole-provider-player-get-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action</p></td>
+<td class="parameter_description"><p>the <span class="type">ParolePlayerAction</span> to retrieve</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-get-action.returns"></a><h4>Returns</h4>
+<p> the requested <a href="/usr/share/gtk-doc/html/gio/GSimpleAction.html#GSimpleAction-struct"><span class="type">GSimpleAction</span></a></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-set-fullscreen"></a><h3>parole_provider_player_set_fullscreen ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_set_fullscreen (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fullscreen</code></em>);</pre>
+<p>Set fullscreen status for Parole.</p>
+<div class="refsect3">
+<a name="parole-provider-player-set-fullscreen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fullscreen</p></td>
+<td class="parameter_description"><p>TRUE for fullscreen, FALSE for unfullscreen</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-set-fullscreen.returns"></a><h4>Returns</h4>
+<p> TRUE if the fullscreen command succeeded, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-get-fullscreen"></a><h3>parole_provider_player_get_fullscreen ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_get_fullscreen (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Get fullscreen status for Parole.</p>
+<div class="refsect3">
+<a name="parole-provider-player-get-fullscreen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-get-fullscreen.returns"></a><h4>Returns</h4>
+<p> TRUE if the player window is fullscreen, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-stream-set-image"></a><h3>parole_stream_set_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+parole_stream_set_image (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object</code></em>,
+                         <em class="parameter"><code><span class="type">GdkPixbuf</span> *pixbuf</code></em>);</pre>
+<p>Set the ParoleStream image to a new pixbuf.</p>
+<div class="refsect3">
+<a name="parole-stream-set-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixbuf</p></td>
+<td class="parameter_description"><p>a <span class="type">GdkPixbuf</span> to set as the stream image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-stream-get-image"></a><h3>parole_stream_get_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
+parole_stream_get_image (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object</code></em>);</pre>
+<p>Get the ParoleStream image pixbuf.</p>
+<div class="refsect3">
+<a name="parole-stream-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-stream-get-image.returns"></a><h4>Returns</h4>
+<p> a <span class="type">GdkPixbuf</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-get-state"></a><h3>parole_provider_player_get_state ()</h3>
+<pre class="programlisting"><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleState" title="enum ParoleState"><span class="returnvalue">ParoleState</span></a>
+parole_provider_player_get_state (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Get the current state of the player.</p>
+<div class="refsect3">
+<a name="parole-provider-player-get-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-get-state.returns"></a><h4>Returns</h4>
+<p> a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleState" title="enum ParoleState"><span class="type">ParoleState</span></a></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-get-stream"></a><h3>parole_provider_player_get_stream ()</h3>
+<pre class="programlisting">const <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="returnvalue">ParoleStream</span></a> *
+parole_provider_player_get_stream (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Get the <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a> object.</p>
+<div class="refsect3">
+<a name="parole-provider-player-get-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-get-stream.returns"></a><h4>Returns</h4>
+<p> the <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a> object</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-get-stream-position"></a><h3>parole_provider_player_get_stream_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+parole_provider_player_get_stream_position
+                               (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Get the stream position (in microseconds) for Parole.</p>
+<div class="refsect3">
+<a name="parole-provider-player-get-stream-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-get-stream-position.returns"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> containing the current stream position in microseconds</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-play-uri"></a><h3>parole_provider_player_play_uri ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_play_uri (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+<p>Issue a play command on the backend for the given uri, note this function
+can be called only of the Parole current state is PAROLE_STATE_STOPPED.</p>
+<p>Returning TRUE doesn't mean that the funtion succeeded to change the state of the player,
+the state change is indicated asynchronously by <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-state-changed" title="The “state-changed” signal"><span class="type">“state-changed”</span></a> signal.</p>
+<div class="refsect3">
+<a name="parole-provider-player-play-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-play-uri.returns"></a><h4>Returns</h4>
+<p> TRUE if the command is processed, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-pause"></a><h3>parole_provider_player_pause ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_pause (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Issue a pause command to the backend, this function can be called when the state of the player
+is PAROLE_STATE_PLAYING.</p>
+<p>Returning TRUE doesn't mean that the funtion succeeded to change the state of the player,
+the state change is indicated asynchronously by <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-state-changed" title="The “state-changed” signal"><span class="type">“state-changed”</span></a> signal.</p>
+<div class="refsect3">
+<a name="parole-provider-player-pause.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-pause.returns"></a><h4>Returns</h4>
+<p> TRUE if the command is processed, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-resume"></a><h3>parole_provider_player_resume ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_resume (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Issue a resume command to the player, this function can be called when
+the current state of the player is PAROLE_STATE_PAUSED.</p>
+<p>Returning TRUE doesn't mean that the funtion succeeded to change the state of the player,
+the state change is indicated asynchronously by <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-state-changed" title="The “state-changed” signal"><span class="type">“state-changed”</span></a> signal.</p>
+<div class="refsect3">
+<a name="parole-provider-player-resume.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-resume.returns"></a><h4>Returns</h4>
+<p> TRUE if the command is processed, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-stop"></a><h3>parole_provider_player_stop ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_stop (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Issue a stop command to the player.</p>
+<p>Returning TRUE doesn't mean that the funtion succeeded to change the state of the player,
+the state change is indicated asynchronously by <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-state-changed" title="The “state-changed” signal"><span class="type">“state-changed”</span></a> signal.</p>
+<div class="refsect3">
+<a name="parole-provider-player-stop.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-stop.returns"></a><h4>Returns</h4>
+<p> TRUE if the command is processed, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-play-next"></a><h3>parole_provider_player_play_next ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_play_next (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Issue a play next command to the player.</p>
+<div class="refsect3">
+<a name="parole-provider-player-play-next.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-play-next.returns"></a><h4>Returns</h4>
+<p> TRUE if the command is processed, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-play-previous"></a><h3>parole_provider_player_play_previous ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_play_previous (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Issue a play previous command to the player.</p>
+<div class="refsect3">
+<a name="parole-provider-player-play-previous.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-play-previous.returns"></a><h4>Returns</h4>
+<p> TRUE if the command is processed, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-seek"></a><h3>parole_provider_player_seek ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+parole_provider_player_seek (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> pos</code></em>);</pre>
+<p>Issue a seek command.</p>
+<div class="refsect3">
+<a name="parole-provider-player-seek.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>position to seek</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="parole-provider-player-seek.returns"></a><h4>Returns</h4>
+<p> TRUE if the seek command succeeded, FALSE otherwise</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="parole-provider-player-open-media-chooser"></a><h3>parole_provider_player_open_media_chooser ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+parole_provider_player_open_media_chooser
+                               (<em class="parameter"><code><a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a> *player</code></em>);</pre>
+<p>Ask Parole to open its media chooser dialog.</p>
+<div class="refsect3">
+<a name="parole-provider-player-open-media-chooser.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ParoleProviderPlayerIface-struct"></a><h3>struct ParoleProviderPlayerIface</h3>
+<pre class="programlisting">struct ParoleProviderPlayerIface;</pre>
+<p>Interface for <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a></p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleProviderPlayer"></a><h3>ParoleProviderPlayer</h3>
+<pre class="programlisting">typedef struct _ParoleProviderPlayer ParoleProviderPlayer;</pre>
+<p>The player interface that the plugins should use in order to, issue playback
+commands to the Parole GStreamer backend or to get information about the
+current playback status.</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParolePluginContainer"></a><h3>enum ParolePluginContainer</h3>
+<p>Available plugin widget containers.</p>
+<div class="refsect3">
+<a name="ParolePluginContainer.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-PLUGIN-CONTAINER-PLAYLIST:CAPS"></a>PAROLE_PLUGIN_CONTAINER_PLAYLIST</p></td>
+<td class="enum_member_description">
+<p>Playlist container</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-PLUGIN-CONTAINER-MAIN-VIEW:CAPS"></a>PAROLE_PLUGIN_CONTAINER_MAIN_VIEW</p></td>
+<td class="enum_member_description">
+<p>Main view container</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleState"></a><h3>enum ParoleState</h3>
+<p>Media playback states.</p>
+<div class="refsect3">
+<a name="ParoleState.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-STATE-STOPPED:CAPS"></a>PAROLE_STATE_STOPPED</p></td>
+<td class="enum_member_description">
+<p>Playback is stopped</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-STATE-PLAYBACK-FINISHED:CAPS"></a>PAROLE_STATE_PLAYBACK_FINISHED</p></td>
+<td class="enum_member_description">
+<p>Playback has finished</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-STATE-ABOUT-TO-FINISH:CAPS"></a>PAROLE_STATE_ABOUT_TO_FINISH</p></td>
+<td class="enum_member_description">
+<p>Playback is about to finish</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-STATE-PAUSED:CAPS"></a>PAROLE_STATE_PAUSED</p></td>
+<td class="enum_member_description">
+<p>Playback is paused</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-STATE-PLAYING:CAPS"></a>PAROLE_STATE_PLAYING</p></td>
+<td class="enum_member_description">
+<p>Playback is active</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-provider-player.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="ParoleProviderPlayerIface-seeked"></a><h3>The <code class="literal">“seeked”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface"><span class="type">ParoleProviderPlayerIface</span></a> *player,
+               <span class="type">double</span>                     value,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                   user_data)</pre>
+<p>Notifies when the stream has been manually advanced.</p>
+<div class="refsect3">
+<a name="ParoleProviderPlayerIface-seeked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the object which received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>the seeked position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleProviderPlayerIface-state-changed"></a><h3>The <code class="literal">“state-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface"><span class="type">ParoleProviderPlayerIface</span></a> *player,
+               <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a>              *stream,
+               <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleState" title="enum ParoleState"><span class="type">ParoleState</span></a>                state,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                   user_data)</pre>
+<p>Issued when the Parole state changed.</p>
+<div class="refsect3">
+<a name="ParoleProviderPlayerIface-state-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the object which received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>the new state</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleProviderPlayerIface-tag-message"></a><h3>The <code class="literal">“tag-message”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface"><span class="type">ParoleProviderPlayerIface</span></a> *player,
+               <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a>              *stream,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                   user_data)</pre>
+<p>Indicates that the stream tags were found and ready to be read.</p>
+<div class="refsect3">
+<a name="ParoleProviderPlayerIface-tag-message.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>player</p></td>
+<td class="parameter_description"><p>the object which received the signal</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream"><span class="type">ParoleStream</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ParoleStream: Parole Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Parole Plugins Reference Manual">
+<link rel="up" href="API.html" title="Part IV. Parole Plugin Reference">
+<link rel="prev" href="Parole-Plugins-parole-provider-player.html" title="parole-provider-player">
+<link rel="next" href="Utils.html" title="Part V. Parole Utilities">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#Parole-Plugins-parole-stream.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#Parole-Plugins-parole-stream.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#Parole-Plugins-parole-stream.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="API.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="Parole-Plugins-parole-provider-player.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="Utils.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="Parole-Plugins-parole-stream"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="Parole-Plugins-parole-stream.top_of_page"></a>ParoleStream</span></h2>
+<p>ParoleStream</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-stream.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--absolute-duration" title="The “absolute-duration” property">absolute-duration</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--album" title="The “album” property">album</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--artist" title="The “artist” property">artist</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--bitrate" title="The “bitrate” property">bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--comment" title="The “comment” property">comment</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--disp-par-d" title="The “disp-par-d” property">disp-par-d</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--disp-par-n" title="The “disp-par-n” property">disp-par-n</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--duration" title="The “duration” property">duration</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--genre" title="The “genre” property">genre</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--has-artwork" title="The “has-artwork” property">has-artwork</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--has-audio" title="The “has-audio” property">has-audio</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--has-video" title="The “has-video” property">has-video</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--image-uri" title="The “image-uri” property">image-uri</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--live" title="The “live” property">live</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleMediaType" title="enum ParoleMediaType"><span class="type">ParoleMediaType</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--media-type" title="The “media-type” property">media-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--num-tracks" title="The “num-tracks” property">num-tracks</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--seekable" title="The “seekable” property">seekable</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--subtitles" title="The “subtitles” property">subtitles</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--tag-available" title="The “tag-available” property">tag-available</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--title" title="The “title” property">title</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--track" title="The “track” property">track</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--uri" title="The “uri” property">uri</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--video-height" title="The “video-height” property">video-height</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--video-width" title="The “video-width” property">video-width</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--year" title="The “year” property">year</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ParoleStream"></a><div class="refsect1">
+<a name="Parole-Plugins-parole-stream.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleMediaType" title="enum ParoleMediaType">ParoleMediaType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream-struct" title="struct ParoleStream">ParoleStream</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-stream.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ParoleStream
+</pre>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-stream.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-stream.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-stream.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ParoleMediaType"></a><h3>enum ParoleMediaType</h3>
+<p>Media types.</p>
+<div class="refsect3">
+<a name="ParoleMediaType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-UNKNOWN:CAPS"></a>PAROLE_MEDIA_TYPE_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>Unknown media type</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-LOCAL-FILE:CAPS"></a>PAROLE_MEDIA_TYPE_LOCAL_FILE</p></td>
+<td class="enum_member_description">
+<p>File found on hard disk</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-CDDA:CAPS"></a>PAROLE_MEDIA_TYPE_CDDA</p></td>
+<td class="enum_member_description">
+<p>Audio CD</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-VCD:CAPS"></a>PAROLE_MEDIA_TYPE_VCD</p></td>
+<td class="enum_member_description">
+<p>Video CD</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-SVCD:CAPS"></a>PAROLE_MEDIA_TYPE_SVCD</p></td>
+<td class="enum_member_description">
+<p>Super Video CD</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-DVD:CAPS"></a>PAROLE_MEDIA_TYPE_DVD</p></td>
+<td class="enum_member_description">
+<p>DVD</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-DVB:CAPS"></a>PAROLE_MEDIA_TYPE_DVB</p></td>
+<td class="enum_member_description">
+<p>Digital Video Broadcast</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PAROLE-MEDIA-TYPE-REMOTE:CAPS"></a>PAROLE_MEDIA_TYPE_REMOTE</p></td>
+<td class="enum_member_description">
+<p>File stored remotely</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream-struct"></a><h3>struct ParoleStream</h3>
+<pre class="programlisting">struct ParoleStream;</pre>
+<p>This object contains all the information describing the current processed
+stream by Parole, this object is used with the callback function the
+<a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-state-changed" title="The “state-changed” signal"><span class="type">“state-changed”</span></a> signal of the player, the plugin
+shouldn't take reference and all the properties are read-only for the plugins.</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="Parole-Plugins-parole-stream.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ParoleStream--absolute-duration"></a><h3>The <code class="literal">“absolute-duration”</code> property</h3>
+<pre class="programlisting">  “absolute-duration”        <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>Absolution duration.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--album"></a><h3>The <code class="literal">“album”</code> property</h3>
+<pre class="programlisting">  “album”                    <span class="type">char</span> *</pre>
+<p>Album.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--artist"></a><h3>The <code class="literal">“artist”</code> property</h3>
+<pre class="programlisting">  “artist”                   <span class="type">char</span> *</pre>
+<p>Artist.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--bitrate"></a><h3>The <code class="literal">“bitrate”</code> property</h3>
+<pre class="programlisting">  “bitrate”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Current bitrate in bits/s.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= G_MAXINT</p>
+<p>Default value: 0</p>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--comment"></a><h3>The <code class="literal">“comment”</code> property</h3>
+<pre class="programlisting">  “comment”                  <span class="type">char</span> *</pre>
+<p>Extra comment block.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--disp-par-d"></a><h3>The <code class="literal">“disp-par-d”</code> property</h3>
+<pre class="programlisting">  “disp-par-d”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Disp par d.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 1</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--disp-par-n"></a><h3>The <code class="literal">“disp-par-n”</code> property</h3>
+<pre class="programlisting">  “disp-par-n”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Disp par n.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 1</p>
+<p>Default value: 1</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--duration"></a><h3>The <code class="literal">“duration”</code> property</h3>
+<pre class="programlisting">  “duration”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>Duration.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--genre"></a><h3>The <code class="literal">“genre”</code> property</h3>
+<pre class="programlisting">  “genre”                    <span class="type">char</span> *</pre>
+<p>Genre.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.6.html" title="API Index - 0.6">0.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--has-artwork"></a><h3>The <code class="literal">“has-artwork”</code> property</h3>
+<pre class="programlisting">  “has-artwork”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the stream has artwork.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+<p class="since">Since: 1.0.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--has-audio"></a><h3>The <code class="literal">“has-audio”</code> property</h3>
+<pre class="programlisting">  “has-audio”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the stream has audio.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--has-video"></a><h3>The <code class="literal">“has-video”</code> property</h3>
+<pre class="programlisting">  “has-video”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the stream has video.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--image-uri"></a><h3>The <code class="literal">“image-uri”</code> property</h3>
+<pre class="programlisting">  “image-uri”                <span class="type">char</span> *</pre>
+<p>URI for the album artwork.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--live"></a><h3>The <code class="literal">“live”</code> property</h3>
+<pre class="programlisting">  “live”                     <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the stream is a live stream.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--media-type"></a><h3>The <code class="literal">“media-type”</code> property</h3>
+<pre class="programlisting">  “media-type”               <a class="link" href="Parole-Plugins-parole-stream.html#ParoleMediaType" title="enum ParoleMediaType"><span class="type">ParoleMediaType</span></a></pre>
+<p>The media type.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: PAROLE_MEDIA_TYPE_UNKNOWN</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--num-tracks"></a><h3>The <code class="literal">“num-tracks”</code> property</h3>
+<pre class="programlisting">  “num-tracks”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Number of tracks in the cdda source, only valid if
+ParoleStream:media-type: is PAROLE_MEDIA_TYPE_CDDA.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,99]</p>
+<p>Default value: 1</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--seekable"></a><h3>The <code class="literal">“seekable”</code> property</h3>
+<pre class="programlisting">  “seekable”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the stream is seekable, for example live
+streams are not seekable.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--subtitles"></a><h3>The <code class="literal">“subtitles”</code> property</h3>
+<pre class="programlisting">  “subtitles”                <span class="type">char</span> *</pre>
+<p>Subtitles path, this is only valid if the property
+"media-type" has the value PAROLE_MEDIA_TYPE_LOCAL_FILE.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--tag-available"></a><h3>The <code class="literal">“tag-available”</code> property</h3>
+<pre class="programlisting">  “tag-available”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether tags information are available on the current stream.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--title"></a><h3>The <code class="literal">“title”</code> property</h3>
+<pre class="programlisting">  “title”                    <span class="type">char</span> *</pre>
+<p>Title.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--track"></a><h3>The <code class="literal">“track”</code> property</h3>
+<pre class="programlisting">  “track”                    <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Currently playing track, this is only valid if
+<a class="link" href="Parole-Plugins-parole-stream.html#ParoleStream--media-type" title="The “media-type” property"><span class="type">“media-type”</span></a>: is PAROLE_MEDIA_TYPE_CDDA
+                          or PAROLE_MEDIA_TYPE_DVD.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 99</p>
+<p>Default value: 1</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--uri"></a><h3>The <code class="literal">“uri”</code> property</h3>
+<pre class="programlisting">  “uri”                      <span class="type">char</span> *</pre>
+<p>Currently loaded uri.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--video-height"></a><h3>The <code class="literal">“video-height”</code> property</h3>
+<pre class="programlisting">  “video-height”             <span class="type">int</span></pre>
+<p>Video height.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--video-width"></a><h3>The <code class="literal">“video-width”</code> property</h3>
+<pre class="programlisting">  “video-width”              <span class="type">int</span></pre>
+<p>Video width.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ParoleStream--year"></a><h3>The <code class="literal">“year”</code> property</h3>
+<pre class="programlisting">  “year”                     <span class="type">char</span> *</pre>
+<p>Year.</p>
+<p>Owner: ParoleStream</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-0.2.html" title="API Index - 0.2">0.2</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

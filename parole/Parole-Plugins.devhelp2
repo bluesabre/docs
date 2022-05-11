@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Parole Plugins Reference Manual" link="index.html" author="" name="Parole-Plugins" version="2" language="c">
+  <chapters>
+    <sub name="Introduction" link="Intro.html"/>
+    <sub name="Parole Plugin Tutorial" link="parole-plugins-tut.html">
+      <sub name="Plugin structure." link="parole-plugins-tut.html#id-1.3.5"/>
+    </sub>
+    <sub name="Fundamentals" link="fundamentals.html">
+      <sub name="parole" link="Parole-Plugins-parole.html"/>
+    </sub>
+    <sub name="Parole Plugin Reference" link="API.html">
+      <sub name="parole-provider-plugin" link="Parole-Plugins-parole-provider-plugin.html"/>
+      <sub name="parole-provider-player" link="Parole-Plugins-parole-provider-player.html"/>
+      <sub name="ParoleStream" link="Parole-Plugins-parole-stream.html"/>
+    </sub>
+    <sub name="Parole Utilities" link="Utils.html">
+      <sub name="ParoleFile" link="ParoleFile.html"/>
+      <sub name="parole-filters" link="Parole-Plugins-parole-filters.html"/>
+      <sub name="parole-pl-parser" link="Parole-Plugins-parole-pl-parser.html"/>
+      <sub name="parole-debug" link="Parole-Plugins-parole-debug.html"/>
+    </sub>
+    <sub name="API Index" link="api-index-full.html"/>
+    <sub name="API Index - 0.2" link="api-index-0.2.html"/>
+    <sub name="API Index - 0.4" link="api-index-0.4.html"/>
+    <sub name="API Index - 0.6" link="api-index-0.6.html"/>
+    <sub name="API Index - Deprecated Symbols" link="api-index-deprecated.html"/>
+    <sub name="Parole Enum Types" link="parole-enum-types.html"/>
+    <sub name="Parole Marshal" link="parole-marshal.html">
+      <sub name="parole-marshal" link="Parole-Plugins-parole-marshal.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="macro" name="PAROLE_CHECK_VERSION()" link="Parole-Plugins-parole.html#PAROLE-CHECK-VERSION:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_DEFINE_TYPE()" link="Parole-Plugins-parole.html#PAROLE-DEFINE-TYPE:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_DEFINE_TYPE_EXTENDED()" link="Parole-Plugins-parole.html#PAROLE-DEFINE-TYPE-EXTENDED:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_DEFINE_TYPE_WITH_CODE()" link="Parole-Plugins-parole.html#PAROLE-DEFINE-TYPE-WITH-CODE:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_DEFINE_ABSTRACT_TYPE()" link="Parole-Plugins-parole.html#PAROLE-DEFINE-ABSTRACT-TYPE:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_DEFINE_ABSTRACT_TYPE_WITH_CODE()" link="Parole-Plugins-parole.html#PAROLE-DEFINE-ABSTRACT-TYPE-WITH-CODE:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_IMPLEMENT_INTERFACE()" link="Parole-Plugins-parole.html#PAROLE-IMPLEMENT-INTERFACE:CAPS"/>
+    <keyword type="function" name="parole_get_supported_recent_files_filter ()" link="Parole-Plugins-parole.html#parole-get-supported-recent-files-filter" since="0.2"/>
+    <keyword type="function" name="parole_get_supported_recent_media_filter ()" link="Parole-Plugins-parole.html#parole-get-supported-recent-media-filter" since="0.2"/>
+    <keyword type="macro" name="PAROLE_MAJOR_VERSION" link="Parole-Plugins-parole.html#PAROLE-MAJOR-VERSION:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_MINOR_VERSION" link="Parole-Plugins-parole.html#PAROLE-MINOR-VERSION:CAPS" since="0.2"/>
+    <keyword type="macro" name="PAROLE_MICRO_VERSION" link="Parole-Plugins-parole.html#PAROLE-MICRO-VERSION:CAPS" since="0.2"/>
+    <keyword type="function" name="parole_provider_plugin_get_is_configurable ()" link="Parole-Plugins-parole-provider-plugin.html#parole-provider-plugin-get-is-configurable" since="0.2"/>
+    <keyword type="function" name="parole_provider_plugin_configure ()" link="Parole-Plugins-parole-provider-plugin.html#parole-provider-plugin-configure" since="0.2"/>
+    <keyword type="function" name="parole_provider_plugin_set_player ()" link="Parole-Plugins-parole-provider-plugin.html#parole-provider-plugin-set-player" since="0.2"/>
+    <keyword type="struct" name="ParoleProviderPlugin" link="Parole-Plugins-parole-provider-plugin.html#ParoleProviderPlugin-struct"/>
+    <keyword type="function" name="parole_provider_player_get_main_window ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-main-window" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_pack ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-pack" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_get_action ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-action" since="0.6"/>
+    <keyword type="function" name="parole_provider_player_set_fullscreen ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-set-fullscreen" since="0.6"/>
+    <keyword type="function" name="parole_provider_player_get_fullscreen ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-fullscreen" since="0.6"/>
+    <keyword type="function" name="parole_stream_set_image ()" link="Parole-Plugins-parole-provider-player.html#parole-stream-set-image" since="0.6"/>
+    <keyword type="function" name="parole_stream_get_image ()" link="Parole-Plugins-parole-provider-player.html#parole-stream-get-image" since="0.6"/>
+    <keyword type="function" name="parole_provider_player_get_state ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-state" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_get_stream ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-stream" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_get_stream_position ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-get-stream-position" since="0.6"/>
+    <keyword type="function" name="parole_provider_player_play_uri ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-play-uri" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_pause ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-pause" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_resume ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-resume" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_stop ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-stop" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_play_next ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-play-next" since="0.6"/>
+    <keyword type="function" name="parole_provider_player_play_previous ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-play-previous" since="0.6"/>
+    <keyword type="function" name="parole_provider_player_seek ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-seek" since="0.2"/>
+    <keyword type="function" name="parole_provider_player_open_media_chooser ()" link="Parole-Plugins-parole-provider-player.html#parole-provider-player-open-media-chooser" since="0.2"/>
+    <keyword type="struct" name="struct ParoleProviderPlayerIface" link="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-struct"/>
+    <keyword type="struct" name="ParoleProviderPlayer" link="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" since="0.2"/>
+    <keyword type="enum" name="enum ParolePluginContainer" link="Parole-Plugins-parole-provider-player.html#ParolePluginContainer"/>
+    <keyword type="enum" name="enum ParoleState" link="Parole-Plugins-parole-provider-player.html#ParoleState"/>
+    <keyword type="signal" name="The “seeked” signal" link="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-seeked"/>
+    <keyword type="signal" name="The “state-changed” signal" link="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-state-changed"/>
+    <keyword type="signal" name="The “tag-message” signal" link="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayerIface-tag-message"/>
+    <keyword type="enum" name="enum ParoleMediaType" link="Parole-Plugins-parole-stream.html#ParoleMediaType"/>
+    <keyword type="struct" name="struct ParoleStream" link="Parole-Plugins-parole-stream.html#ParoleStream-struct"/>
+    <keyword type="property" name="The “absolute-duration” property" link="Parole-Plugins-parole-stream.html#ParoleStream--absolute-duration"/>
+    <keyword type="property" name="The “album” property" link="Parole-Plugins-parole-stream.html#ParoleStream--album"/>
+    <keyword type="property" name="The “artist” property" link="Parole-Plugins-parole-stream.html#ParoleStream--artist"/>
+    <keyword type="property" name="The “bitrate” property" link="Parole-Plugins-parole-stream.html#ParoleStream--bitrate"/>
+    <keyword type="property" name="The “comment” property" link="Parole-Plugins-parole-stream.html#ParoleStream--comment"/>
+    <keyword type="property" name="The “disp-par-d” property" link="Parole-Plugins-parole-stream.html#ParoleStream--disp-par-d"/>
+    <keyword type="property" name="The “disp-par-n” property" link="Parole-Plugins-parole-stream.html#ParoleStream--disp-par-n"/>
+    <keyword type="property" name="The “duration” property" link="Parole-Plugins-parole-stream.html#ParoleStream--duration"/>
+    <keyword type="property" name="The “genre” property" link="Parole-Plugins-parole-stream.html#ParoleStream--genre"/>
+    <keyword type="property" name="The “has-artwork” property" link="Parole-Plugins-parole-stream.html#ParoleStream--has-artwork"/>
+    <keyword type="property" name="The “has-audio” property" link="Parole-Plugins-parole-stream.html#ParoleStream--has-audio"/>
+    <keyword type="property" name="The “has-video” property" link="Parole-Plugins-parole-stream.html#ParoleStream--has-video"/>
+    <keyword type="property" name="The “image-uri” property" link="Parole-Plugins-parole-stream.html#ParoleStream--image-uri"/>
+    <keyword type="property" name="The “live” property" link="Parole-Plugins-parole-stream.html#ParoleStream--live"/>
+    <keyword type="property" name="The “media-type” property" link="Parole-Plugins-parole-stream.html#ParoleStream--media-type"/>
+    <keyword type="property" name="The “num-tracks” property" link="Parole-Plugins-parole-stream.html#ParoleStream--num-tracks"/>
+    <keyword type="property" name="The “seekable” property" link="Parole-Plugins-parole-stream.html#ParoleStream--seekable"/>
+    <keyword type="property" name="The “subtitles” property" link="Parole-Plugins-parole-stream.html#ParoleStream--subtitles"/>
+    <keyword type="property" name="The “tag-available” property" link="Parole-Plugins-parole-stream.html#ParoleStream--tag-available"/>
+    <keyword type="property" name="The “title” property" link="Parole-Plugins-parole-stream.html#ParoleStream--title"/>
+    <keyword type="property" name="The “track” property" link="Parole-Plugins-parole-stream.html#ParoleStream--track"/>
+    <keyword type="property" name="The “uri” property" link="Parole-Plugins-parole-stream.html#ParoleStream--uri"/>
+    <keyword type="property" name="The “video-height” property" link="Parole-Plugins-parole-stream.html#ParoleStream--video-height"/>
+    <keyword type="property" name="The “video-width” property" link="Parole-Plugins-parole-stream.html#ParoleStream--video-width"/>
+    <keyword type="property" name="The “year” property" link="Parole-Plugins-parole-stream.html#ParoleStream--year"/>
+    <keyword type="function" name="parole_file_new ()" link="ParoleFile.html#parole-file-new" since="0.2"/>
+    <keyword type="function" name="parole_file_new_with_display_name ()" link="ParoleFile.html#parole-file-new-with-display-name" since="0.2"/>
+    <keyword type="function" name="parole_file_new_cdda_track ()" link="ParoleFile.html#parole-file-new-cdda-track" since="0.4"/>
+    <keyword type="function" name="parole_file_new_dvd_chapter ()" link="ParoleFile.html#parole-file-new-dvd-chapter" since="0.4"/>
+    <keyword type="function" name="parole_file_set_dvd_chapter ()" link="ParoleFile.html#parole-file-set-dvd-chapter" since="0.4"/>
+    <keyword type="function" name="parole_file_get_dvd_chapter ()" link="ParoleFile.html#parole-file-get-dvd-chapter" since="0.4"/>
+    <keyword type="function" name="parole_file_set_custom_subtitles ()" link="ParoleFile.html#parole-file-set-custom-subtitles" since="0.4"/>
+    <keyword type="struct" name="struct ParoleFile" link="ParoleFile.html#ParoleFile-struct"/>
+    <keyword type="property" name="The “content-type” property" link="ParoleFile.html#ParoleFile--content-type"/>
+    <keyword type="property" name="The “custom-subtitles” property" link="ParoleFile.html#ParoleFile--custom-subtitles"/>
+    <keyword type="property" name="The “directory” property" link="ParoleFile.html#ParoleFile--directory"/>
+    <keyword type="property" name="The “display-name” property" link="ParoleFile.html#ParoleFile--display-name"/>
+    <keyword type="property" name="The “dvd-chapter” property" link="ParoleFile.html#ParoleFile--dvd-chapter"/>
+    <keyword type="property" name="The “filename” property" link="ParoleFile.html#ParoleFile--filename"/>
+    <keyword type="property" name="The “uri” property" link="ParoleFile.html#ParoleFile--uri"/>
+    <keyword type="function" name="parole_get_supported_audio_filter ()" link="Parole-Plugins-parole-filters.html#parole-get-supported-audio-filter" since="0.2"/>
+    <keyword type="function" name="parole_get_supported_video_filter ()" link="Parole-Plugins-parole-filters.html#parole-get-supported-video-filter" since="0.2"/>
+    <keyword type="function" name="parole_get_supported_media_filter ()" link="Parole-Plugins-parole-filters.html#parole-get-supported-media-filter" since="0.2"/>
+    <keyword type="function" name="parole_get_supported_files_filter ()" link="Parole-Plugins-parole-filters.html#parole-get-supported-files-filter" since="0.2"/>
+    <keyword type="function" name="parole_get_supported_playlist_filter ()" link="Parole-Plugins-parole-filters.html#parole-get-supported-playlist-filter" since="0.2"/>
+    <keyword type="function" name="parole_file_filter ()" link="Parole-Plugins-parole-filters.html#parole-file-filter" since="0.2"/>
+    <keyword type="function" name="parole_pl_parser_guess_format_from_extension ()" link="Parole-Plugins-parole-pl-parser.html#parole-pl-parser-guess-format-from-extension" since="0.2"/>
+    <keyword type="function" name="parole_pl_parser_guess_format_from_data ()" link="Parole-Plugins-parole-pl-parser.html#parole-pl-parser-guess-format-from-data" since="0.2"/>
+    <keyword type="function" name="parole_pl_parser_can_parse_data ()" link="Parole-Plugins-parole-pl-parser.html#parole-pl-parser-can-parse-data" since="0.2"/>
+    <keyword type="function" name="parole_pl_parser_parse_from_file_by_extension ()" link="Parole-Plugins-parole-pl-parser.html#parole-pl-parser-parse-from-file-by-extension" since="0.2"/>
+    <keyword type="function" name="parole_pl_parser_parse_all_from_file ()" link="Parole-Plugins-parole-pl-parser.html#parole-pl-parser-parse-all-from-file" since="0.2"/>
+    <keyword type="function" name="parole_pl_parser_save_from_files ()" link="Parole-Plugins-parole-pl-parser.html#parole-pl-parser-save-from-files" since="0.2"/>
+    <keyword type="enum" name="enum ParolePlFormat" link="Parole-Plugins-parole-pl-parser.html#ParolePlFormat"/>
+    <keyword type="macro" name="PAROLE_DEBUG_ENUM()" link="Parole-Plugins-parole-debug.html#PAROLE-DEBUG-ENUM:CAPS"/>
+    <keyword type="macro" name="PAROLE_DEBUG_ENUM_FULL()" link="Parole-Plugins-parole-debug.html#PAROLE-DEBUG-ENUM-FULL:CAPS"/>
+    <keyword type="function" name="parole_debug_enum ()" link="Parole-Plugins-parole-debug.html#parole-debug-enum"/>
+    <keyword type="function" name="parole_debug_enum_full ()" link="Parole-Plugins-parole-debug.html#parole-debug-enum-full"/>
+    <keyword type="function" name="parole_marshal_VOID__OBJECT_ENUM ()" link="Parole-Plugins-parole-marshal.html#parole-marshal-VOID--OBJECT-ENUM"/>
+    <keyword type="function" name="parole_marshal_VOID__OBJECT_DOUBLE ()" link="Parole-Plugins-parole-marshal.html#parole-marshal-VOID--OBJECT-DOUBLE"/>
+    <keyword type="function" name="parole_marshal_VOID__OBJECT_INT ()" link="Parole-Plugins-parole-marshal.html#parole-marshal-VOID--OBJECT-INT"/>
+    <keyword type="constant" name="PAROLE_PLUGIN_CONTAINER_PLAYLIST" link="Parole-Plugins-parole-provider-player.html#PAROLE-PLUGIN-CONTAINER-PLAYLIST:CAPS"/>
+    <keyword type="constant" name="PAROLE_PLUGIN_CONTAINER_MAIN_VIEW" link="Parole-Plugins-parole-provider-player.html#PAROLE-PLUGIN-CONTAINER-MAIN-VIEW:CAPS"/>
+    <keyword type="constant" name="PAROLE_STATE_STOPPED" link="Parole-Plugins-parole-provider-player.html#PAROLE-STATE-STOPPED:CAPS"/>
+    <keyword type="constant" name="PAROLE_STATE_PLAYBACK_FINISHED" link="Parole-Plugins-parole-provider-player.html#PAROLE-STATE-PLAYBACK-FINISHED:CAPS"/>
+    <keyword type="constant" name="PAROLE_STATE_ABOUT_TO_FINISH" link="Parole-Plugins-parole-provider-player.html#PAROLE-STATE-ABOUT-TO-FINISH:CAPS"/>
+    <keyword type="constant" name="PAROLE_STATE_PAUSED" link="Parole-Plugins-parole-provider-player.html#PAROLE-STATE-PAUSED:CAPS"/>
+    <keyword type="constant" name="PAROLE_STATE_PLAYING" link="Parole-Plugins-parole-provider-player.html#PAROLE-STATE-PLAYING:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_UNKNOWN" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_LOCAL_FILE" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-LOCAL-FILE:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_CDDA" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-CDDA:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_VCD" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-VCD:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_SVCD" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-SVCD:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_DVD" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-DVD:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_DVB" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-DVB:CAPS"/>
+    <keyword type="constant" name="PAROLE_MEDIA_TYPE_REMOTE" link="Parole-Plugins-parole-stream.html#PAROLE-MEDIA-TYPE-REMOTE:CAPS"/>
+    <keyword type="constant" name="PAROLE_PL_FORMAT_UNKNOWN" link="Parole-Plugins-parole-pl-parser.html#PAROLE-PL-FORMAT-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="PAROLE_PL_FORMAT_M3U" link="Parole-Plugins-parole-pl-parser.html#PAROLE-PL-FORMAT-M3U:CAPS"/>
+    <keyword type="constant" name="PAROLE_PL_FORMAT_PLS" link="Parole-Plugins-parole-pl-parser.html#PAROLE-PL-FORMAT-PLS:CAPS"/>
+    <keyword type="constant" name="PAROLE_PL_FORMAT_ASX" link="Parole-Plugins-parole-pl-parser.html#PAROLE-PL-FORMAT-ASX:CAPS"/>
+    <keyword type="constant" name="PAROLE_PL_FORMAT_XSPF" link="Parole-Plugins-parole-pl-parser.html#PAROLE-PL-FORMAT-XSPF:CAPS"/>
+  </functions>
+</book>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Part II. Parole Plugin Tutorial: Parole Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Parole Plugins Reference Manual">
+<link rel="up" href="index.html" title="Parole Plugins Reference Manual">
+<link rel="prev" href="Intro.html" title="Part I. Introduction">
+<link rel="next" href="fundamentals.html" title="Part III. Fundamentals">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="Intro.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="fundamentals.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="part">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="parole-plugins-tut"></a>Part II. Parole Plugin Tutorial</h1></div></div></div>
+<p>
+	This section explains the steps required to write a plugin for Parole using
+	the C language interface.
+    </p>
+<p>
+	A simple example can be found in the parole plugins dir shipped with the source code, the sample
+	plugin.
+    </p>
+<p>
+	As a basics, the plugin needs to implement <a class="link" href="Parole-Plugins-parole-provider-plugin.html#ParoleProviderPlugin"><span class="type">ParoleProviderPlugin</span></a>
+	interface, That is, the player use this interface to get if the plugin is configurable, to ask it to show
+	its properties dialog when needed, to set the <a class="link" href="Parole-Plugins-parole-provider-player.html#ParoleProviderPlayer" title="ParoleProviderPlayer"><span class="type">ParoleProviderPlayer</span></a>
+	interface used by plugins to access the the Parole player backend.
+    </p>
+<div class="sect1">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="id-1.3.5"></a>Plugin structure.</h2></div></div></div>
+    sample-plugin.c
+    <pre class="programlisting">
+#include "src/misc/parole.h"
+
+#include "src/plugins/sample/sample-provider.h"
+
+G_MODULE_EXPORT GType   parole_plugin_initialize(ParoleProviderPlugin *plugin);
+
+G_MODULE_EXPORT void    parole_plugin_shutdown(void);
+
+G_MODULE_EXPORT GType
+parole_plugin_initialize(ParoleProviderPlugin *plugin) {
+    xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
+    sample_provider_register_type(plugin);
+    return SAMPLE_TYPE_PROVIDER;
+}
+
+G_MODULE_EXPORT void
+parole_plugin_shutdown(void) {
+}
+    </pre>
+
+    sample-provider.h
+    <pre class="programlisting">
+#ifndef SRC_PLUGINS_SAMPLE_SAMPLE_PROVIDER_H_
+#define SRC_PLUGINS_SAMPLE_SAMPLE_PROVIDER_H_
+
+#include "src/misc/parole.h"
+
+G_BEGIN_DECLS
+
+typedef struct _SampleProviderClass SampleProviderClass;
+typedef struct _SampleProvider      SampleProvider;
+
+#define SAMPLE_TYPE_PROVIDER             (sample_provider_get_type ())
+#define SAMPLE_PROVIDER(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), SAMPLE_TYPE_PROVIDER, SampleProvider))
+#define SAMPLE_PROVIDER_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), SAMPLE_TYPE_PROVIDER, SampleProviderClass))
+#define SAMPLE_IS_PROVIDER(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), SAMPLE_TYPE_PROVIDER))
+#define SAMPLE_IS_PROVIDER_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), SAMPLE_TYPE_PROVIDER))
+#define SAMPLE_PROVIDER_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), SAMPLE_TYPE_PROVIDER, SampleProviderClass))
+
+GType sample_provider_get_type           (void) G_GNUC_CONST G_GNUC_INTERNAL;
+
+void  sample_provider_register_type      (ParoleProviderPlugin *plugin);
+
+G_END_DECLS
+
+#endif /* SRC_PLUGINS_SAMPLE_SAMPLE_PROVIDER_H_ */
+    </pre>
+
+    sample-provider.c
+    <pre class="programlisting">
+#include "src/plugins/sample/sample-provider.h"
+
+static void   sample_provider_iface_init(ParoleProviderPluginIface *iface);
+static void   sample_provider_finalize(GObject                     *object);
+
+
+struct _SampleProviderClass {
+    GObjectClass parent_class;
+};
+
+struct _SampleProvider {
+    GObject                 parent;
+    ParoleProviderPlayer   *player;
+};
+
+PAROLE_DEFINE_TYPE_WITH_CODE(SampleProvider,
+                             sample_provider,
+                             G_TYPE_OBJECT,
+                             PAROLE_IMPLEMENT_INTERFACE(PAROLE_TYPE_PROVIDER_PLUGIN,
+                             sample_provider_iface_init));
+
+static gboolean sample_provider_is_configurable(ParoleProviderPlugin *plugin) {
+    return FALSE;
+}
+
+static void
+sample_provider_set_player(ParoleProviderPlugin *plugin, ParoleProviderPlayer *player) {
+    SampleProvider *provider;
+    provider = SAMPLE_PROVIDER(plugin);
+
+    provider-&gt;player = player;
+}
+
+static void
+sample_provider_iface_init(ParoleProviderPluginIface *iface) {
+    iface-&gt;get_is_configurable = sample_provider_is_configurable;
+    iface-&gt;set_player = sample_provider_set_player;
+}
+
+static void sample_provider_class_init(SampleProviderClass *klass) {
+    GObjectClass *gobject_class = G_OBJECT_CLASS(klass);
+
+    gobject_class-&gt;finalize = sample_provider_finalize;
+}
+
+static void sample_provider_init(SampleProvider *provider) {
+    provider-&gt;player = NULL;
+}
+
+static void sample_provider_finalize(GObject *object) {
+    G_OBJECT_CLASS(sample_provider_parent_class)-&gt;finalize(object);
+}
+    </pre>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>
