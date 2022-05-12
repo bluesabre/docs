@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Extensions to gdk-pixbuf: exo Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="exo Reference Manual">
 <link rel="up" href="exo-extensions.html" title="Part V. Extensions to existing frameworks">
 <link rel="prev" href="exo-extensions.html" title="Part V. Extensions to existing frameworks">
 <link rel="next" href="exo-Extensions-to-GObject.html" title="Extensions to GObject">
-<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -114,13 +114,13 @@ provided by the gdk-pixbuf library.</p>
 <a name="exo-gdk-pixbuf-colorize"></a><h3>exo_gdk_pixbuf_colorize ()</h3>
 <pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
 exo_gdk_pixbuf_colorize (<em class="parameter"><code>const <span class="type">GdkPixbuf</span> *source</code></em>,
-                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/gdk3/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                         <em class="parameter"><code>const <span class="type">GdkColor</span> *color</code></em>);</pre>
 <p>Creates a new <span class="type">GdkPixbuf</span> based on <em class="parameter"><code>source</code></em>
 , which is
 colorized to <em class="parameter"><code>color</code></em>
 .</p>
 <p>The caller is responsible to free the returned object
-using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+using <code class="function">g_object_unref()</code> when no longer needed.</p>
 <div class="refsect3">
 <a name="exo-gdk-pixbuf-colorize.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -155,14 +155,14 @@ using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html
 <pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
 exo_gdk_pixbuf_frame (<em class="parameter"><code>const <span class="type">GdkPixbuf</span> *source</code></em>,
                       <em class="parameter"><code>const <span class="type">GdkPixbuf</span> *frame</code></em>,
-                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> left_offset</code></em>,
-                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> top_offset</code></em>,
-                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> right_offset</code></em>,
-                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> bottom_offset</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gint</span> left_offset</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> top_offset</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> right_offset</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> bottom_offset</code></em>);</pre>
 <p>Embeds <em class="parameter"><code>source</code></em>
  in <em class="parameter"><code>frame</code></em>
  and returns the result as new <span class="type">GdkPixbuf</span>.</p>
-<p>The caller is responsible to free the returned <span class="type">GdkPixbuf</span> using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>.</p>
+<p>The caller is responsible to free the returned <span class="type">GdkPixbuf</span> using <code class="function">g_object_unref()</code>.</p>
 <div class="refsect3">
 <a name="exo-gdk-pixbuf-frame.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -217,14 +217,14 @@ exo_gdk_pixbuf_frame (<em class="parameter"><code>const <span class="type">GdkPi
 <a name="exo-gdk-pixbuf-lucent"></a><h3>exo_gdk_pixbuf_lucent ()</h3>
 <pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
 exo_gdk_pixbuf_lucent (<em class="parameter"><code>const <span class="type">GdkPixbuf</span> *source</code></em>,
-                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> percent</code></em>);</pre>
+                       <em class="parameter"><code><span class="type">guint</span> percent</code></em>);</pre>
 <p>Returns a version of <em class="parameter"><code>source</code></em>
 , whose pixels translucency is
 <em class="parameter"><code>percent</code></em>
  of the original <em class="parameter"><code>source</code></em>
  pixels.</p>
 <p>The caller is responsible to free the returned object
-using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+using <code class="function">g_object_unref()</code> when no longer needed.</p>
 <div class="refsect3">
 <a name="exo-gdk-pixbuf-lucent.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -263,7 +263,7 @@ exo_gdk_pixbuf_spotlight (<em class="parameter"><code>const <span class="type">G
 , suitable for
 prelit state display of icons.</p>
 <p>The caller is responsible to free the returned
-pixbuf using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function"><GTKDOCLINK HREF="g-object-unref"><code class="function">g_object_unref()</code></a></code></GTKDOCLINK>.</p>
+pixbuf using <code class="function"><GTKDOCLINK HREF="g-object-unref"><code class="function">g_object_unref()</code></code></GTKDOCLINK>.</p>
 <div class="refsect3">
 <a name="exo-gdk-pixbuf-spotlight.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -291,15 +291,15 @@ pixbuf using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Ty
 <a name="exo-gdk-pixbuf-scale-down"></a><h3>exo_gdk_pixbuf_scale_down ()</h3>
 <pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
 exo_gdk_pixbuf_scale_down (<em class="parameter"><code><span class="type">GdkPixbuf</span> *source</code></em>,
-                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserve_aspect_ratio</code></em>,
-                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dest_width</code></em>,
-                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dest_height</code></em>);</pre>
+                           <em class="parameter"><code><span class="type">gboolean</span> preserve_aspect_ratio</code></em>,
+                           <em class="parameter"><code><span class="type">gint</span> dest_width</code></em>,
+                           <em class="parameter"><code><span class="type">gint</span> dest_height</code></em>);</pre>
 <p>Scales down the <em class="parameter"><code>source</code></em>
  to fit into the given <em class="parameter"><code>width</code></em>
  and
 <em class="parameter"><code>height</code></em>
 . If <em class="parameter"><code>aspect_ratio</code></em>
- is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> then the aspect ratio
+ is <code class="literal">TRUE</code> then the aspect ratio
 of <em class="parameter"><code>source</code></em>
  will be preserved.</p>
 <p>If <em class="parameter"><code>width</code></em>
@@ -312,7 +312,7 @@ is larger than the height of <em class="parameter"><code>source</code></em>
  will be returned, as it's unneccesary then to
 scale down.</p>
 <p>The caller is responsible to free the returned <span class="type">GdkPixbuf</span>
-using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+using <code class="function">g_object_unref()</code> when no longer needed.</p>
 <div class="refsect3">
 <a name="exo-gdk-pixbuf-scale-down.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -329,7 +329,7 @@ using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html
 </tr>
 <tr>
 <td class="parameter_name"><p>preserve_aspect_ratio</p></td>
-<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve aspect ratio.</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> to preserve aspect ratio.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -356,7 +356,7 @@ using <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html
 <a name="exo-gdk-pixbuf-scale-ratio"></a><h3>exo_gdk_pixbuf_scale_ratio ()</h3>
 <pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
 exo_gdk_pixbuf_scale_ratio (<em class="parameter"><code><span class="type">GdkPixbuf</span> *source</code></em>,
-                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dest_size</code></em>);</pre>
+                            <em class="parameter"><code><span class="type">gint</span> dest_size</code></em>);</pre>
 <p>Scales <em class="parameter"><code>source</code></em>
  to <em class="parameter"><code>dest_size</code></em>
  while preserving the aspect ratio of
@@ -394,17 +394,17 @@ exo_gdk_pixbuf_scale_ratio (<em class="parameter"><code><span class="type">GdkPi
 <a name="exo-gdk-pixbuf-new-from-file-at-max-size"></a><h3>exo_gdk_pixbuf_new_from_file_at_max_size ()</h3>
 <pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
 exo_gdk_pixbuf_new_from_file_at_max_size
-                               (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
-                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_width</code></em>,
-                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_height</code></em>,
-                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserve_aspect_ratio</code></em>,
-                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                               (<em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> max_width</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> max_height</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> preserve_aspect_ratio</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>Creates a new <span class="type">GdkPixbuf</span> by loading an image from the file at
 <em class="parameter"><code>filename</code></em>
-. The file format is detected automatically. If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is
+. The file format is detected automatically. If <code class="literal">NULL</code> is
 returned, then <em class="parameter"><code>error</code></em>
  will be set. Possible errors are in the
-<span class="type">GDK_PIXBUF_ERROR</span> and <a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#G-FILE-ERROR:CAPS"><span class="type">G_FILE_ERROR</span></a> domains. If the image dimensions
+<span class="type">GDK_PIXBUF_ERROR</span> and <span class="type">G_FILE_ERROR</span> domains. If the image dimensions
 exceed <em class="parameter"><code>max_width</code></em>
  or <em class="parameter"><code>max_height</code></em>
 , the image will be scaled down to
@@ -440,7 +440,7 @@ name encoding.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>preserve_aspect_ratio</p></td>
-<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve the image's aspect ratio
+<td class="parameter_description"><p><code class="literal">TRUE</code> to preserve the image's aspect ratio
 while scaling to fit into <em class="parameter"><code>max_width</code></em>
 and <em class="parameter"><code>max_height</code></em>
 .</p></td>
@@ -448,7 +448,7 @@ and <em class="parameter"><code>max_height</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>return location for errors or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_description"><p>return location for errors or <code class="literal">NULL</code>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -457,7 +457,7 @@ and <em class="parameter"><code>max_height</code></em>
 <div class="refsect3">
 <a name="exo-gdk-pixbuf-new-from-file-at-max-size.returns"></a><h4>Returns</h4>
 <p> a newly created <span class="type">GdkPixbuf</span> with a reference count or 1, or
-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if any of several error conditions occurred: the file
+<code class="literal">NULL</code> if any of several error conditions occurred: the file
 could not be opened, there was no loader for the file's format,
 there was not enough memory to allocate the buffer for the
 image, or the image file contained invalid data.</p>
@@ -467,6 +467,6 @@ image, or the image file contained invalid data.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.33.1</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>
