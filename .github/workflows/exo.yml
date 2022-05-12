@@ -1,7 +1,7 @@
 name: Update exo docs
 on:
   schedule:
-    - cron: "50 8 * * *"
+    - cron: "10 9 * * *"
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -11,6 +11,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
+          token: ${{ secrets.PAT }}
       
       - name: install build dependencies
         run: |
