@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Binding Properties Functions: exo Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="exo Reference Manual">
 <link rel="up" href="exo-miscelleanous.html" title="Part VI. Miscelleanous">
 <link rel="prev" href="exo-Version-Information.html" title="Version Information">
 <link rel="next" href="exo-Executing-Applications.html" title="Executing Applications">
-<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -41,7 +41,7 @@
 <tbody>
 <tr>
 <td class="function_type">
-<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="returnvalue">gboolean</span>
 </td>
 <td class="function_name">
 <span class="c_punctuation">(</span><a class="link" href="exo-Binding-Properties-Functions.html#ExoBindingTransform" title="ExoBindingTransform ()">*ExoBindingTransform</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
@@ -152,9 +152,9 @@ bindings are supported and you can specify functions to perform
 explicit transformation of values if required. Multiple properties
 can be bound together in a complex way and infinite loops are
 eliminated automatically.</p>
-<p>For example, lets say, your program has a <a href="/usr/share/gtk-doc/html/gtk3/GtkEntry.html#GtkEntry-struct"><span class="type">GtkEntry</span></a> widget that allows
+<p>For example, lets say, your program has a <span class="type">GtkEntry</span> widget that allows
 the user to enter some text for the program, but this entry widget should
-only be sensitive if a <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckButton.html#GtkCheckButton-struct"><span class="type">GtkCheckButton</span></a> is active.</p>
+only be sensitive if a <span class="type">GtkCheckButton</span> is active.</p>
 <div class="example">
 <a name="id-1.7.3.6.5"></a><p class="title"><b>Example 2. Connecting a <span class="structname">GtkCheckButton</span> and a
 <span class="structname">GtkEntry</span></b></p>
@@ -172,16 +172,16 @@ only be sensitive if a <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckButton.html
 8
 9
 10</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">button</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">entry</span><span class="p">;</span><span class="w"></span>
+        <td class="listing_code"><pre class="programlisting"><span class="p">{</span>
+  <span class="n">GtkWidget</span> <span class="o">*</span><span class="n">button</span><span class="p">;</span>
+  <span class="n">GtkWidget</span> <span class="o">*</span><span class="n">entry</span><span class="p">;</span>
 
-<span class="w">  </span><span class="n">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_check_button_new_with_label</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Activate me&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">entry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_entry_new</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+  <span class="n">button</span> <span class="o">=</span> <span class="n">gtk_check_button_new_with_label</span> <span class="p">(</span><span class="s">&quot;Activate me&quot;</span><span class="p">);</span>
+  <span class="n">entry</span> <span class="o">=</span> <span class="n">gtk_entry_new</span> <span class="p">();</span>
 
-<span class="w">  </span><span class="n">exo_binding_new</span><span class="w"> </span><span class="p">(</span><span class="n">G_OBJECT</span><span class="w"> </span><span class="p">(</span><span class="n">button</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;active&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                   </span><span class="n">G_OBJECT</span><span class="w"> </span><span class="p">(</span><span class="n">entry</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;sensitive&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span></pre></td>
+  <span class="n">exo_binding_new</span> <span class="p">(</span><span class="n">G_OBJECT</span> <span class="p">(</span><span class="n">button</span><span class="p">),</span> <span class="s">&quot;active&quot;</span><span class="p">,</span>
+                   <span class="n">G_OBJECT</span> <span class="p">(</span><span class="n">entry</span><span class="p">),</span> <span class="s">&quot;sensitive&quot;</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -196,10 +196,10 @@ button. No need to write signal handlers for this purpose any more.</p>
 <a name="exo-Binding-Properties-Functions.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="ExoBindingTransform"></a><h3>ExoBindingTransform ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-<span class="c_punctuation">(</span>*ExoBindingTransform<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> *src_value</code></em>,
-                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> *dst_value</code></em>,
-                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<span class="c_punctuation">(</span>*ExoBindingTransform<span class="c_punctuation">)</span> (<em class="parameter"><code>const <span class="type">GValue</span> *src_value</code></em>,
+                        <em class="parameter"><code><span class="type">GValue</span> *dst_value</code></em>,
+                        <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
 <p>Function type used for binding transformation functions.</p>
 <p>Accomplished transformation from <em class="parameter"><code>src_value</code></em>
  to <em class="parameter"><code>dst_value</code></em>
@@ -237,17 +237,17 @@ this function gets called.</p>
 </div>
 <div class="refsect3">
 <a name="ExoBindingTransform.returns"></a><h4>Returns</h4>
-<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if transformation failed, else <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<p> <code class="literal">FALSE</code> if transformation failed, else <code class="literal">TRUE</code>.</p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="exo-binding-new"></a><h3>exo_binding_new ()</h3>
 <pre class="programlisting"><a class="link" href="exo-Binding-Properties-Functions.html#ExoBinding" title="ExoBinding"><span class="returnvalue">ExoBinding</span></a> *
-exo_binding_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *src_object</code></em>,
-                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *src_property</code></em>,
-                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *dst_object</code></em>,
-                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dst_property</code></em>);</pre>
+exo_binding_new (<em class="parameter"><code><span class="type">GObject</span> *src_object</code></em>,
+                 <em class="parameter"><code>const <span class="type">gchar</span> *src_property</code></em>,
+                 <em class="parameter"><code><span class="type">GObject</span> *dst_object</code></em>,
+                 <em class="parameter"><code>const <span class="type">gchar</span> *dst_property</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">exo_binding_new</code> is deprecated and should not be used in newly-written code.</p>
 <p>xfce 4.18: In favor of GBinding</p>
@@ -273,7 +273,7 @@ value of <em class="parameter"><code>src_property</code></em>
 <tbody>
 <tr>
 <td class="parameter_name"><p>src_object</p></td>
-<td class="parameter_description"><p>The source <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The source <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -283,7 +283,7 @@ value of <em class="parameter"><code>src_property</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>dst_object</p></td>
-<td class="parameter_description"><p>The destination <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The destination <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -304,13 +304,13 @@ removed if one of the objects is finalized.</p>
 <div class="refsect2">
 <a name="exo-binding-new-full"></a><h3>exo_binding_new_full ()</h3>
 <pre class="programlisting"><a class="link" href="exo-Binding-Properties-Functions.html#ExoBinding" title="ExoBinding"><span class="returnvalue">ExoBinding</span></a> *
-exo_binding_new_full (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *src_object</code></em>,
-                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *src_property</code></em>,
-                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *dst_object</code></em>,
-                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dst_property</code></em>,
+exo_binding_new_full (<em class="parameter"><code><span class="type">GObject</span> *src_object</code></em>,
+                      <em class="parameter"><code>const <span class="type">gchar</span> *src_property</code></em>,
+                      <em class="parameter"><code><span class="type">GObject</span> *dst_object</code></em>,
+                      <em class="parameter"><code>const <span class="type">gchar</span> *dst_property</code></em>,
                       <em class="parameter"><code><a class="link" href="exo-Binding-Properties-Functions.html#ExoBindingTransform" title="ExoBindingTransform ()"><span class="type">ExoBindingTransform</span></a> transform</code></em>,
-                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy_notify</code></em>,
-                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">GDestroyNotify</span> destroy_notify</code></em>,
+                      <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">exo_binding_new_full</code> is deprecated and should not be used in newly-written code.</p>
 <p>xfce 4.18: In favor of GBinding</p>
@@ -336,7 +336,7 @@ value of <em class="parameter"><code>src_property</code></em>
 <tbody>
 <tr>
 <td class="parameter_name"><p>src_object</p></td>
-<td class="parameter_description"><p>The source <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The source <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -346,7 +346,7 @@ value of <em class="parameter"><code>src_property</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>dst_object</p></td>
-<td class="parameter_description"><p>The destination <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The destination <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -356,13 +356,13 @@ value of <em class="parameter"><code>src_property</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>transform</p></td>
-<td class="parameter_description"><p>Transformation function or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_description"><p>Transformation function or <code class="literal">NULL</code>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>destroy_notify</p></td>
 <td class="parameter_description"><p>Callback function that is called on disconnection with <em class="parameter"><code>user_data</code></em>
-or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+or <code class="literal">NULL</code>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -383,10 +383,10 @@ removed if one of the objects is finalized.</p>
 <div class="refsect2">
 <a name="exo-binding-new-with-negation"></a><h3>exo_binding_new_with_negation ()</h3>
 <pre class="programlisting"><a class="link" href="exo-Binding-Properties-Functions.html#ExoBinding" title="ExoBinding"><span class="returnvalue">ExoBinding</span></a> *
-exo_binding_new_with_negation (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *src_object</code></em>,
-                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *src_property</code></em>,
-                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *dst_object</code></em>,
-                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dst_property</code></em>);</pre>
+exo_binding_new_with_negation (<em class="parameter"><code><span class="type">GObject</span> *src_object</code></em>,
+                               <em class="parameter"><code>const <span class="type">gchar</span> *src_property</code></em>,
+                               <em class="parameter"><code><span class="type">GObject</span> *dst_object</code></em>,
+                               <em class="parameter"><code>const <span class="type">gchar</span> *dst_property</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">exo_binding_new_with_negation</code> is deprecated and should not be used in newly-written code.</p>
 <p>xfce 4.18: In favor of GBinding</p>
@@ -403,7 +403,7 @@ exo_binding_new_with_negation (<em class="parameter"><code><a href="/usr/share/g
 <tbody>
 <tr>
 <td class="parameter_name"><p>src_object</p></td>
-<td class="parameter_description"><p>The source <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The source <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ exo_binding_new_with_negation (<em class="parameter"><code><a href="/usr/share/g
 </tr>
 <tr>
 <td class="parameter_name"><p>dst_object</p></td>
-<td class="parameter_description"><p>The destination <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The destination <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -465,10 +465,10 @@ was specified when <em class="parameter"><code>binding</code></em>
 <div class="refsect2">
 <a name="exo-mutual-binding-new"></a><h3>exo_mutual_binding_new ()</h3>
 <pre class="programlisting"><a class="link" href="exo-Binding-Properties-Functions.html#ExoMutualBinding" title="ExoMutualBinding"><span class="returnvalue">ExoMutualBinding</span></a> *
-exo_mutual_binding_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object1</code></em>,
-                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property1</code></em>,
-                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object2</code></em>,
-                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property2</code></em>);</pre>
+exo_mutual_binding_new (<em class="parameter"><code><span class="type">GObject</span> *object1</code></em>,
+                        <em class="parameter"><code>const <span class="type">gchar</span> *property1</code></em>,
+                        <em class="parameter"><code><span class="type">GObject</span> *object2</code></em>,
+                        <em class="parameter"><code>const <span class="type">gchar</span> *property2</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">exo_mutual_binding_new</code> is deprecated and should not be used in newly-written code.</p>
 <p>xfce 4.18: In favor of GBinding</p>
@@ -489,7 +489,7 @@ of <em class="parameter"><code>property1</code></em>
 <tbody>
 <tr>
 <td class="parameter_name"><p>object1</p></td>
-<td class="parameter_description"><p>The first <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The first <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -499,7 +499,7 @@ of <em class="parameter"><code>property1</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>object2</p></td>
-<td class="parameter_description"><p>The second <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The second <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -520,14 +520,14 @@ removed if one of the objects is finalized.</p>
 <div class="refsect2">
 <a name="exo-mutual-binding-new-full"></a><h3>exo_mutual_binding_new_full ()</h3>
 <pre class="programlisting"><a class="link" href="exo-Binding-Properties-Functions.html#ExoMutualBinding" title="ExoMutualBinding"><span class="returnvalue">ExoMutualBinding</span></a> *
-exo_mutual_binding_new_full (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object1</code></em>,
-                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property1</code></em>,
-                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object2</code></em>,
-                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property2</code></em>,
+exo_mutual_binding_new_full (<em class="parameter"><code><span class="type">GObject</span> *object1</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *property1</code></em>,
+                             <em class="parameter"><code><span class="type">GObject</span> *object2</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *property2</code></em>,
                              <em class="parameter"><code><a class="link" href="exo-Binding-Properties-Functions.html#ExoBindingTransform" title="ExoBindingTransform ()"><span class="type">ExoBindingTransform</span></a> transform</code></em>,
                              <em class="parameter"><code><a class="link" href="exo-Binding-Properties-Functions.html#ExoBindingTransform" title="ExoBindingTransform ()"><span class="type">ExoBindingTransform</span></a> reverse_transform</code></em>,
-                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy_notify</code></em>,
-                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+                             <em class="parameter"><code><span class="type">GDestroyNotify</span> destroy_notify</code></em>,
+                             <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">exo_mutual_binding_new_full</code> is deprecated and should not be used in newly-written code.</p>
 <p>xfce 4.18: In favor of GBinding</p>
@@ -540,7 +540,7 @@ exo_mutual_binding_new_full (<em class="parameter"><code><a href="/usr/share/gtk
 <p>Both <em class="parameter"><code>transform</code></em>
  and <em class="parameter"><code>reverse_transform</code></em>
  should simultaneously be
-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> or non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. If they are non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, they should be reverse
+<code class="literal">NULL</code> or non-<code class="literal">NULL</code>. If they are non-<code class="literal">NULL</code>, they should be reverse
 in each other.</p>
 <div class="refsect3">
 <a name="exo-mutual-binding-new-full.parameters"></a><h4>Parameters</h4>
@@ -553,7 +553,7 @@ in each other.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>object1</p></td>
-<td class="parameter_description"><p>The first <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The first <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -563,7 +563,7 @@ in each other.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>object2</p></td>
-<td class="parameter_description"><p>The second <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The second <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -573,18 +573,18 @@ in each other.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>transform</p></td>
-<td class="parameter_description"><p>Transformation function or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_description"><p>Transformation function or <code class="literal">NULL</code>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>reverse_transform</p></td>
-<td class="parameter_description"><p>The inverse transformation function or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_description"><p>The inverse transformation function or <code class="literal">NULL</code>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>destroy_notify</p></td>
 <td class="parameter_description"><p>Callback function called on disconnection with <em class="parameter"><code>user_data</code></em>
-as argument or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+as argument or <code class="literal">NULL</code>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -605,10 +605,10 @@ removed if one of the objects is finalized.</p>
 <div class="refsect2">
 <a name="exo-mutual-binding-new-with-negation"></a><h3>exo_mutual_binding_new_with_negation ()</h3>
 <pre class="programlisting"><a class="link" href="exo-Binding-Properties-Functions.html#ExoMutualBinding" title="ExoMutualBinding"><span class="returnvalue">ExoMutualBinding</span></a> *
-exo_mutual_binding_new_with_negation (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object1</code></em>,
-                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property1</code></em>,
-                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object2</code></em>,
-                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property2</code></em>);</pre>
+exo_mutual_binding_new_with_negation (<em class="parameter"><code><span class="type">GObject</span> *object1</code></em>,
+                                      <em class="parameter"><code>const <span class="type">gchar</span> *property1</code></em>,
+                                      <em class="parameter"><code><span class="type">GObject</span> *object2</code></em>,
+                                      <em class="parameter"><code>const <span class="type">gchar</span> *property2</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">exo_mutual_binding_new_with_negation</code> is deprecated and should not be used in newly-written code.</p>
 <p>xfce 4.18: In favor of GBinding</p>
@@ -625,7 +625,7 @@ exo_mutual_binding_new_with_negation (<em class="parameter"><code><a href="/usr/
 <tbody>
 <tr>
 <td class="parameter_name"><p>object1</p></td>
-<td class="parameter_description"><p>The first <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The first <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -635,7 +635,7 @@ exo_mutual_binding_new_with_negation (<em class="parameter"><code><a href="/usr/
 </tr>
 <tr>
 <td class="parameter_name"><p>object2</p></td>
-<td class="parameter_description"><p>The second <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p></td>
+<td class="parameter_description"><p>The second <span class="type">GObject</span>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -716,6 +716,6 @@ GObject Reference Manual</a>,
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.33.1</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>
