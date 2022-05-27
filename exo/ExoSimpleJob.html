@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ExoSimpleJob: exo Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="exo Reference Manual">
 <link rel="up" href="exo-jobs.html" title="Part IV. Framework for threaded/asynchronous jobs">
 <link rel="prev" href="ExoJob.html" title="ExoJob">
 <link rel="next" href="exo-extensions.html" title="Part V. Extensions to existing frameworks">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -211,67 +211,67 @@ the specified parameters.</p>
 59
 60
 61</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span>
-<span class="nf">list_directory</span> <span class="p">(</span><span class="n">ExoJob</span>      <span class="o">*</span><span class="n">job</span><span class="p">,</span>
-                <span class="n">GValueArray</span> <span class="o">*</span><span class="n">param_values</span><span class="p">,</span>
-                <span class="n">GError</span>     <span class="o">**</span><span class="n">error</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">GFileEnumerator</span> <span class="o">*</span><span class="n">enumerator</span><span class="p">;</span>
-  <span class="n">GFileInfo</span>       <span class="o">*</span><span class="n">info</span><span class="p">;</span>
-  <span class="n">GError</span>          <span class="o">*</span><span class="n">err</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
-  <span class="n">GFile</span>           <span class="o">*</span><span class="n">directory</span><span class="p">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span><span class="w"> </span><span class="n">gboolean</span><span class="w"></span>
+<span class="nf">list_directory</span><span class="w"> </span><span class="p">(</span><span class="n">ExoJob</span><span class="w">      </span><span class="o">*</span><span class="n">job</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">GValueArray</span><span class="w"> </span><span class="o">*</span><span class="n">param_values</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">GError</span><span class="w">     </span><span class="o">**</span><span class="n">error</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">GFileEnumerator</span><span class="w"> </span><span class="o">*</span><span class="n">enumerator</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GFileInfo</span><span class="w">       </span><span class="o">*</span><span class="n">info</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GError</span><span class="w">          </span><span class="o">*</span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">GFile</span><span class="w">           </span><span class="o">*</span><span class="n">directory</span><span class="p">;</span><span class="w"></span>
 
-  <span class="k">if</span> <span class="p">(</span><span class="n">exo_job_set_error_if_cancelled</span> <span class="p">(</span><span class="n">EXO_JOB</span> <span class="p">(</span><span class="n">job</span><span class="p">),</span> <span class="n">error</span><span class="p">))</span>
-    <span class="k">return</span> <span class="n">FALSE</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">exo_job_set_error_if_cancelled</span><span class="w"> </span><span class="p">(</span><span class="n">EXO_JOB</span><span class="w"> </span><span class="p">(</span><span class="n">job</span><span class="p">),</span><span class="w"> </span><span class="n">error</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">directory</span> <span class="o">=</span> <span class="n">g_value_get_object</span> <span class="p">(</span><span class="n">g_value_array_get_nth</span> <span class="p">(</span><span class="n">param_values</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
+<span class="w">  </span><span class="n">directory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_value_get_object</span><span class="w"> </span><span class="p">(</span><span class="n">g_value_array_get_nth</span><span class="w"> </span><span class="p">(</span><span class="n">param_values</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span><span class="w"></span>
 
-  <span class="n">enumerator</span> <span class="o">=</span> <span class="n">g_file_enumerate_children</span> <span class="p">(</span><span class="n">directory</span><span class="p">,</span>
-                                          <span class="s">&quot;standard::display-name&quot;</span><span class="p">,</span>
-                                          <span class="n">G_FILE_QUERY_INFO_NONE</span><span class="p">,</span>
-                                          <span class="n">exo_job_get_cancellable</span> <span class="p">(</span><span class="n">job</span><span class="p">),</span>
-                                          <span class="o">&amp;</span><span class="n">err</span><span class="p">);</span>
+<span class="w">  </span><span class="n">enumerator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_file_enumerate_children</span><span class="w"> </span><span class="p">(</span><span class="n">directory</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                          </span><span class="s">&quot;standard::display-name&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                          </span><span class="n">G_FILE_QUERY_INFO_NONE</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                          </span><span class="n">exo_job_get_cancellable</span><span class="w"> </span><span class="p">(</span><span class="n">job</span><span class="p">),</span><span class="w"></span>
+<span class="w">                                          </span><span class="o">&amp;</span><span class="n">err</span><span class="p">);</span><span class="w"></span>
 
-  <span class="k">if</span> <span class="p">(</span><span class="n">err</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">g_propagate_error</span> <span class="p">(</span><span class="n">error</span><span class="p">,</span> <span class="n">err</span><span class="p">);</span>
-      <span class="k">return</span> <span class="n">FALSE</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">g_propagate_error</span><span class="w"> </span><span class="p">(</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-  <span class="k">while</span> <span class="p">(</span><span class="n">TRUE</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">info</span> <span class="o">=</span> <span class="n">g_file_enumerator_next_file</span> <span class="p">(</span><span class="n">enumerator</span><span class="p">,</span>
-                                          <span class="n">exo_job_get_cancellable</span> <span class="p">(</span><span class="n">job</span><span class="p">),</span>
-                                          <span class="o">&amp;</span><span class="n">err</span><span class="p">);</span>
+<span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">TRUE</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_file_enumerator_next_file</span><span class="w"> </span><span class="p">(</span><span class="n">enumerator</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                          </span><span class="n">exo_job_get_cancellable</span><span class="w"> </span><span class="p">(</span><span class="n">job</span><span class="p">),</span><span class="w"></span>
+<span class="w">                                          </span><span class="o">&amp;</span><span class="n">err</span><span class="p">);</span><span class="w"></span>
 
-      <span class="k">if</span> <span class="p">(</span><span class="n">info</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
-        <span class="k">break</span><span class="p">;</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
 
-      <span class="n">exo_job_info_message</span> <span class="p">(</span><span class="n">job</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&quot;Child: %s&quot;</span><span class="p">),</span>
-                            <span class="n">g_file_info_get_display_name</span> <span class="p">(</span><span class="n">info</span><span class="p">));</span>
+<span class="w">      </span><span class="n">exo_job_info_message</span><span class="w"> </span><span class="p">(</span><span class="n">job</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="p">(</span><span class="s">&quot;Child: %s&quot;</span><span class="p">),</span><span class="w"></span>
+<span class="w">                            </span><span class="n">g_file_info_get_display_name</span><span class="w"> </span><span class="p">(</span><span class="n">info</span><span class="p">));</span><span class="w"></span>
 
-      <span class="n">g_object_unref</span> <span class="p">(</span><span class="n">info</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="w">      </span><span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">info</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 
-  <span class="n">g_object_unref</span> <span class="p">(</span><span class="n">enumerator</span><span class="p">);</span>
+<span class="w">  </span><span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">enumerator</span><span class="p">);</span><span class="w"></span>
 
-  <span class="k">if</span> <span class="p">(</span><span class="n">err</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">g_propagate_error</span> <span class="p">(</span><span class="n">error</span><span class="p">,</span> <span class="n">err</span><span class="p">);</span>
-      <span class="k">return</span> <span class="n">FALSE</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="k">else</span>
-    <span class="p">{</span>
-      <span class="k">return</span> <span class="n">TRUE</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">g_propagate_error</span><span class="w"> </span><span class="p">(</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">err</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">else</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="p">...</span>
+<span class="p">...</span><span class="w"></span>
 
-<span class="n">GFile</span> <span class="o">*</span><span class="n">file</span> <span class="o">=</span> <span class="n">g_file_new_for_path</span> <span class="p">(</span><span class="s">&quot;/home/user&quot;</span><span class="p">);</span>
-<span class="n">ExoJob</span> <span class="o">*</span><span class="n">job</span> <span class="o">=</span> <span class="n">exo_simple_job_launch</span> <span class="p">(</span><span class="n">list_directory</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">G_TYPE_FILE</span><span class="p">,</span> <span class="n">file</span><span class="p">);</span>
-<span class="n">g_signal_connect</span> <span class="p">(</span><span class="n">job</span><span class="p">,</span> <span class="s">&quot;info-message&quot;</span><span class="p">,</span> <span class="n">G_CALLBACK</span> <span class="p">(</span><span class="n">update_some_widget</span><span class="p">),</span> <span class="n">widget</span><span class="p">);</span>
-<span class="n">g_signal_connect</span> <span class="p">(</span><span class="n">job</span><span class="p">,</span> <span class="s">&quot;finished&quot;</span><span class="p">,</span> <span class="n">G_CALLBACK</span> <span class="p">(</span><span class="n">unref_the_job_object</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span></pre></td>
+<span class="n">GFile</span><span class="w"> </span><span class="o">*</span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_file_new_for_path</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;/home/user&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="n">ExoJob</span><span class="w"> </span><span class="o">*</span><span class="n">job</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exo_simple_job_launch</span><span class="w"> </span><span class="p">(</span><span class="n">list_directory</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">G_TYPE_FILE</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">);</span><span class="w"></span>
+<span class="n">g_signal_connect</span><span class="w"> </span><span class="p">(</span><span class="n">job</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;info-message&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">G_CALLBACK</span><span class="w"> </span><span class="p">(</span><span class="n">update_some_widget</span><span class="p">),</span><span class="w"> </span><span class="n">widget</span><span class="p">);</span><span class="w"></span>
+<span class="n">g_signal_connect</span><span class="w"> </span><span class="p">(</span><span class="n">job</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;finished&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">G_CALLBACK</span><span class="w"> </span><span class="p">(</span><span class="n">unref_the_job_object</span><span class="p">),</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span><span class="w"></span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -331,6 +331,6 @@ directly accessed.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ExoIconView: exo Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="exo Reference Manual">
 <link rel="up" href="exo-widgets.html" title="Part II. Additional widgets">
 <link rel="prev" href="ExoIconChooserDialog.html" title="ExoIconChooserDialog">
 <link rel="next" href="ExoTreeView.html" title="ExoTreeView">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -584,12 +584,12 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--column-spacing" title="The “column-spacing” property">column-spacing</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--columns" title="The “columns” property">columns</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -599,12 +599,12 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--icon-column" title="The “icon-column” property">icon-column</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--item-width" title="The “item-width” property">item-width</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -614,12 +614,12 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--margin" title="The “margin” property">margin</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--markup-column" title="The “markup-column” property">markup-column</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -635,7 +635,7 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--pixbuf-column" title="The “pixbuf-column” property">pixbuf-column</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -645,12 +645,12 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--row-spacing" title="The “row-spacing” property">row-spacing</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--search-column" title="The “search-column” property">search-column</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -670,12 +670,12 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--spacing" title="The “spacing” property">spacing</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><span class="type">gint</span></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="ExoIconView.html#ExoIconView--text-column" title="The “text-column” property">text-column</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -2088,8 +2088,8 @@ To do this, you can use <code class="function">gtk_tree_row_reference_new()</cod
       <tr>
         <td class="listing_lines" align="right"><pre>1
 2</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="n">g_list_foreach</span> <span class="p">(</span><span class="n">list</span><span class="p">,</span> <span class="n">gtk_tree_path_free</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
-<span class="n">g_list_free</span> <span class="p">(</span><span class="n">list</span><span class="p">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">g_list_foreach</span><span class="w"> </span><span class="p">(</span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="n">gtk_tree_path_free</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span><span class="w"></span>
+<span class="n">g_list_free</span><span class="w"> </span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="w"></span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -3259,7 +3259,7 @@ to right.</p>
 <a name="ExoIconView.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ExoIconView--column-spacing"></a><h3>The <code class="literal">“column-spacing”</code> property</h3>
-<pre class="programlisting">  “column-spacing”           <span class="type">gint</span></pre>
+<pre class="programlisting">  “column-spacing”           <span class="type">int</span></pre>
 <p>The column-spacing property specifies the space which is inserted between
 the columns of the icon view.</p>
 <p>Owner: ExoIconView</p>
@@ -3271,7 +3271,7 @@ the columns of the icon view.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--columns"></a><h3>The <code class="literal">“columns”</code> property</h3>
-<pre class="programlisting">  “columns”                  <span class="type">gint</span></pre>
+<pre class="programlisting">  “columns”                  <span class="type">int</span></pre>
 <p>The columns property contains the number of the columns in which the
 items should be displayed. If it is -1, the number of columns will
 be chosen automatically to fill the available area.</p>
@@ -3294,7 +3294,7 @@ be chosen automatically to fill the available area.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--icon-column"></a><h3>The <code class="literal">“icon-column”</code> property</h3>
-<pre class="programlisting">  “icon-column”              <span class="type">gint</span></pre>
+<pre class="programlisting">  “icon-column”              <span class="type">int</span></pre>
 <p>The ::icon-column property contains the number of the model column
 containing an absolute path to an image file to render. The icon column
 must be of type <span class="type">G_TYPE_STRING</span>. Setting this property to -1 turns off
@@ -3308,7 +3308,7 @@ the display of icons.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--item-width"></a><h3>The <code class="literal">“item-width”</code> property</h3>
-<pre class="programlisting">  “item-width”               <span class="type">gint</span></pre>
+<pre class="programlisting">  “item-width”               <span class="type">int</span></pre>
 <p>The item-width property specifies the width to use for each item.
 If it is set to -1, the icon view will automatically determine a
 suitable item size.</p>
@@ -3335,7 +3335,7 @@ are layed out vertically in columns from left to right.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--margin"></a><h3>The <code class="literal">“margin”</code> property</h3>
-<pre class="programlisting">  “margin”                   <span class="type">gint</span></pre>
+<pre class="programlisting">  “margin”                   <span class="type">int</span></pre>
 <p>The margin property specifies the space which is inserted
 at the edges of the icon view.</p>
 <p>Owner: ExoIconView</p>
@@ -3347,7 +3347,7 @@ at the edges of the icon view.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--markup-column"></a><h3>The <code class="literal">“markup-column”</code> property</h3>
-<pre class="programlisting">  “markup-column”            <span class="type">gint</span></pre>
+<pre class="programlisting">  “markup-column”            <span class="type">int</span></pre>
 <p>The markup-column property contains the number of the model column
 containing markup information to be displayed. The markup column must be
 of type <span class="type">G_TYPE_STRING</span>. If this property and the text-column property
@@ -3381,7 +3381,7 @@ the text) of the item are positioned relative to each other.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--pixbuf-column"></a><h3>The <code class="literal">“pixbuf-column”</code> property</h3>
-<pre class="programlisting">  “pixbuf-column”            <span class="type">gint</span></pre>
+<pre class="programlisting">  “pixbuf-column”            <span class="type">int</span></pre>
 <p>The ::pixbuf-column property contains the number of the model column
 containing the pixbufs which are displayed. The pixbuf column must be
 of type <span class="type">GDK_TYPE_PIXBUF</span>. Setting this property to -1 turns off the
@@ -3405,7 +3405,7 @@ by Drag and Drop.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--row-spacing"></a><h3>The <code class="literal">“row-spacing”</code> property</h3>
-<pre class="programlisting">  “row-spacing”              <span class="type">gint</span></pre>
+<pre class="programlisting">  “row-spacing”              <span class="type">int</span></pre>
 <p>The row-spacing property specifies the space which is inserted between
 the rows of the icon view.</p>
 <p>Owner: ExoIconView</p>
@@ -3417,7 +3417,7 @@ the rows of the icon view.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--search-column"></a><h3>The <code class="literal">“search-column”</code> property</h3>
-<pre class="programlisting">  “search-column”            <span class="type">gint</span></pre>
+<pre class="programlisting">  “search-column”            <span class="type">int</span></pre>
 <p>Model column to search through when searching through code.</p>
 <p>Owner: ExoIconView</p>
 <p>Flags: Read / Write</p>
@@ -3461,7 +3461,7 @@ single click mode. A value of <code class="literal">0</code> disables the automa
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--spacing"></a><h3>The <code class="literal">“spacing”</code> property</h3>
-<pre class="programlisting">  “spacing”                  <span class="type">gint</span></pre>
+<pre class="programlisting">  “spacing”                  <span class="type">int</span></pre>
 <p>The spacing property specifies the space which is inserted between
 the cells (i.e. the icon and the text) of an item.</p>
 <p>Owner: ExoIconView</p>
@@ -3473,7 +3473,7 @@ the cells (i.e. the icon and the text) of an item.</p>
 <hr>
 <div class="refsect2">
 <a name="ExoIconView--text-column"></a><h3>The <code class="literal">“text-column”</code> property</h3>
-<pre class="programlisting">  “text-column”              <span class="type">gint</span></pre>
+<pre class="programlisting">  “text-column”              <span class="type">int</span></pre>
 <p>The text-column property contains the number of the model column
 containing the texts which are displayed. The text column must be
 of type <span class="type">G_TYPE_STRING</span>. If this property and the markup-column
@@ -3569,7 +3569,7 @@ selected and one of the keys: Space, Return or Enter is pressed.</p>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 user_function (<a class="link" href="ExoIconView.html" title="ExoIconView"><span class="type">ExoIconView</span></a>    *icon_view,
                <span class="type">GtkMovementStep</span> step,
-               <span class="type">gint</span>            count,
+               <span class="type">int</span>             count,
                <span class="type">gpointer</span>        user_data)</pre>
 <p>The ::move-cursor signal is a keybinding signal which gets emitted when
 the user initiates a cursor movement.</p>
@@ -3828,6 +3828,6 @@ programmatically.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>
