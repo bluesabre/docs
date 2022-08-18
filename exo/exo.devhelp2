@@ -222,12 +222,12 @@
     <keyword type="function" name="exo_strdup_strftime ()" link="exo-String-Utility-Functions.html#exo-strdup-strftime" since="0.3.3"/>
     <keyword type="function" name="exo_strndupv ()" link="exo-String-Utility-Functions.html#exo-strndupv"/>
     <keyword type="macro" name="I_()" link="exo-String-Utility-Functions.html#I-:CAPS"/>
-    <keyword type="function" name="exo_noop ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop" since="0.3.1"/>
-    <keyword type="function" name="exo_noop_one ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-one" since="0.3.1"/>
-    <keyword type="function" name="exo_noop_zero ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-zero" since="0.3.1"/>
-    <keyword type="function" name="exo_noop_null ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-null" since="0.3.1"/>
-    <keyword type="function" name="exo_noop_true ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-true" since="0.3.1"/>
-    <keyword type="function" name="exo_noop_false ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-false" since="0.3.1"/>
+    <keyword type="function" name="exo_noop ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
+    <keyword type="function" name="exo_noop_one ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-one" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
+    <keyword type="function" name="exo_noop_zero ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-zero" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
+    <keyword type="function" name="exo_noop_null ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-null" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
+    <keyword type="function" name="exo_noop_true ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-true" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
+    <keyword type="function" name="exo_noop_false ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-false" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
     <keyword type="constant" name="EXO_ICON_VIEW_NO_DROP" link="ExoIconView.html#EXO-ICON-VIEW-NO-DROP:CAPS"/>
     <keyword type="constant" name="EXO_ICON_VIEW_DROP_INTO" link="ExoIconView.html#EXO-ICON-VIEW-DROP-INTO:CAPS"/>
     <keyword type="constant" name="EXO_ICON_VIEW_DROP_LEFT" link="ExoIconView.html#EXO-ICON-VIEW-DROP-LEFT:CAPS"/>
