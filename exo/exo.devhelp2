@@ -213,15 +213,15 @@
     <keyword type="function" name="exo_execute_preferred_application_on_screen ()" link="exo-Executing-Applications.html#exo-execute-preferred-application-on-screen" since="0.3.1.3"/>
     <keyword type="function" name="exo_execute_terminal_shell ()" link="exo-Executing-Applications.html#exo-execute-terminal-shell" since="0.3.1.3"/>
     <keyword type="function" name="exo_execute_terminal_shell_on_screen ()" link="exo-Executing-Applications.html#exo-execute-terminal-shell-on-screen" since="0.3.1.3"/>
-    <keyword type="function" name="exo_str_elide_underscores ()" link="exo-String-Utility-Functions.html#exo-str-elide-underscores"/>
-    <keyword type="function" name="exo_str_is_equal ()" link="exo-String-Utility-Functions.html#exo-str-is-equal"/>
-    <keyword type="macro" name="exo_str_is_empty()" link="exo-String-Utility-Functions.html#exo-str-is-empty"/>
-    <keyword type="function" name="exo_str_is_flag ()" link="exo-String-Utility-Functions.html#exo-str-is-flag" since="0.11.5"/>
-    <keyword type="function" name="exo_str_looks_like_an_uri ()" link="exo-String-Utility-Functions.html#exo-str-looks-like-an-uri" since="0.5.0"/>
-    <keyword type="function" name="exo_str_replace ()" link="exo-String-Utility-Functions.html#exo-str-replace" since="0.3.1.1"/>
-    <keyword type="function" name="exo_strdup_strftime ()" link="exo-String-Utility-Functions.html#exo-strdup-strftime" since="0.3.3"/>
-    <keyword type="function" name="exo_strndupv ()" link="exo-String-Utility-Functions.html#exo-strndupv"/>
-    <keyword type="macro" name="I_()" link="exo-String-Utility-Functions.html#I-:CAPS"/>
+    <keyword type="function" name="exo_str_elide_underscores ()" link="exo-String-Utility-Functions.html#exo-str-elide-underscores" deprecated="xfce 4.18: Unused within xfce project"/>
+    <keyword type="function" name="exo_str_is_equal ()" link="exo-String-Utility-Functions.html#exo-str-is-equal" deprecated="xfce 4.18: In favor of g_strcmp0()"/>
+    <keyword type="macro" name="exo_str_is_empty()" link="exo-String-Utility-Functions.html#exo-str-is-empty" deprecated="xfce 4.18: Replaced with xfce_str_is_empty()"/>
+    <keyword type="function" name="exo_str_is_flag ()" link="exo-String-Utility-Functions.html#exo-str-is-flag" deprecated="xfce 4.18: In favor of g_str_has_prefix()" since="0.11.5"/>
+    <keyword type="function" name="exo_str_looks_like_an_uri ()" link="exo-String-Utility-Functions.html#exo-str-looks-like-an-uri" deprecated="xfce 4.18: In favor of g_uri_is_valid()" since="0.5.0"/>
+    <keyword type="function" name="exo_str_replace ()" link="exo-String-Utility-Functions.html#exo-str-replace" deprecated="xfce 4.18: Replaced by xfce_str_replace()" since="0.3.1.1"/>
+    <keyword type="function" name="exo_strdup_strftime ()" link="exo-String-Utility-Functions.html#exo-strdup-strftime" deprecated="xfce 4.18: In favor of g_date_time_format()" since="0.3.3"/>
+    <keyword type="function" name="exo_strndupv ()" link="exo-String-Utility-Functions.html#exo-strndupv" deprecated="xfce 4.18: Unused within xfce project"/>
+    <keyword type="macro" name="I_()" link="exo-String-Utility-Functions.html#I-:CAPS" deprecated="xfce 4.18: Use libxfce4util instead"/>
     <keyword type="function" name="exo_noop ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
     <keyword type="function" name="exo_noop_one ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-one" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
     <keyword type="function" name="exo_noop_zero ()" link="exo-Miscellaneous-Utility-Functions.html#exo-noop-zero" deprecated="xfce 4.18: Use NULL pointer instead" since="0.3.1"/>
